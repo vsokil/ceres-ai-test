@@ -41,7 +41,7 @@ def main():
 
     upload_key = local_png
     # throws AccessDenied error, most likely need to set up AWS identity credentials and get PutObject permission to write to s3 bucket
-    # s3_client.upload_file(local_png, upload_key)
+    s3_client.upload_file(local_png, upload_key)
     print(f"Plot uploaded to S3 at: {upload_key}")
 
 
